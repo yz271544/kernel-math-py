@@ -79,7 +79,7 @@ RUN pip install pyttsx3
 RUN pip install soundfile
 RUN pip install tabula
 RUN pip install xml-python
-
+RUN pip install jupyter-client
 
 USER jovyan
 RUN mkdir /mnt/data
