@@ -13,7 +13,7 @@ dependencies:
   - analytics-python
   - anyio==3.6.2
   - anytree
-  - aom==3.5.0==h27087fc_0
+  - aom==3.5.0
   - argcomplete
   - argon2-cffi==21.3.0
   - argon2-cffi-bindings==21.2.0
@@ -45,7 +45,7 @@ dependencies:
   - basemap-data
   - bcrypt
   - beautifulsoup4==4.11.2
-  - blas==2.116==openblas
+  - blas==2.116
   - blas-devel==3.9.0
   - bleach==6.0.0
   - blinker==1.5
