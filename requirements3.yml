@@ -1,0 +1,23 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - exchange-calendars
+  - faker
+  - fastprogress
+  - ffmpeg-python
+  - ffmpy
+  - filelock
+  - fiona
+  - flask
+  - flask-cors
+  - flask-login
+  - folium
+  - fpdf
+  - frozenlist
+  - fuzzywuzzy
+  - gensim
+  - geographiclib
+  - pip:
+      - ipykernel==6.29.4
+prefix: /opt/conda

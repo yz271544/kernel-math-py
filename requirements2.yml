@@ -1,0 +1,23 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cairocffi
+  - cairosvg
+  - camelot-py
+  - catalogue
+  - chardet
+  - click-plugins
+  - cligj
+  - compressed-rtf
+  - cssselect2
+  - cymem
+  - deprecat
+  - docx2txt
+  - ebcdic
+  - ebooklib
+  - einops
+  - et-xmlfile
+  - pip:
+      - ipykernel==6.29.4
+prefix: /opt/conda

@@ -1,0 +1,23 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - rarfile
+  - rasterio
+  - regex
+  - reportlab
+  - requests-unixsocket
+  - resampy
+  - semver
+  - sentencepiece
+  - shap
+  - shapely
+  - slicer
+  - smart-open
+  - snuggs
+  - spacy
+  - spacy-legacy
+  - speechrecognition
+  - pip:
+      - ipykernel==6.29.4
+prefix: /opt/conda

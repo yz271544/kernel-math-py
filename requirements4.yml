@@ -1,0 +1,23 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - geopandas
+  - geopy
+  - gradio
+  - graphviz
+  - gtts
+  - h11
+  - h2
+  - h5netcdf
+  - hpack
+  - html5lib
+  - hypercorn
+  - hyperframe
+  - imageio-ffmpeg
+  - imapclient
+  - importlib-resources
+  - iniconfig
+  - pip:
+      - ipykernel==6.29.4
+prefix: /opt/conda

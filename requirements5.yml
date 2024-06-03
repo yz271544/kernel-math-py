@@ -1,0 +1,23 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - isodate
+  - itsdangerous
+  - jax
+  - jsonpickle
+  - keras
+  - librosa
+  - loguru
+  - lxml
+  - markdown2
+  - markdownify
+  - matplotlib
+  - matplotlib-venn
+  - mizani
+  - mne
+  - monotonic
+  - moviepy
+  - pip:
+      - ipykernel==6.29.4
+prefix: /opt/conda

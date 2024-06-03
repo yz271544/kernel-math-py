@@ -1,0 +1,19 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - weasyprint
+  - websockets
+  - werkzeug
+  - wordcloud
+  - wrapt
+  - wsproto
+  - xarray
+  - xarray-einstats
+  - xgboost
+  - xlsxwriter
+  - yarl
+  - zopfli
+  - pip:
+      - ipykernel==6.29.4
+prefix: /opt/conda

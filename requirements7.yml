@@ -1,0 +1,23 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - plotly
+  - plotnine
+  - preshed
+  - priority
+  - proglog
+  - py
+  - pyaudio
+  - pycountry
+  - pycryptodome
+  - pydantic
+  - pydot
+  - pydub
+  - pydyf
+  - pygraphviz
+  - pyluach
+  - pymc3
+  - pip:
+      - ipykernel==6.29.4
+prefix: /opt/conda
