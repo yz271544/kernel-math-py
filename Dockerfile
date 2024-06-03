@@ -62,7 +62,7 @@ COPY requirements.yml .
 RUN conda config --append channels conda-forge
 RUN conda config --append channels defaults
 RUN conda config --append channels free
-RUN conda env update -n base -f requirements.yml && conda clean --all
+RUN conda env update -n base -f requirements.yml
 
 #RUN pip install --retries 20 -i https://repo.sensetime.com/repository/pypi/simple/ \
 #  --no-cache-dir -r requirements.txt
