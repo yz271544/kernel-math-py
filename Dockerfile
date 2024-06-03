@@ -41,12 +41,6 @@ RUN apt-get update && apt-get install -y libgeos-dev
 
 RUN apt-get update && apt-get install -y gnupg lsb-release wget ca-certificates
 
-
-# RUN apt-get update && apt-get install -y -V ca-certificates lsb-release wget && \
-#     wget -O- https://apache.jfrog.io/artifactory/arrow/ubuntu/apache-arrow-archive-keyring.gpg | gpg --dearmor > /usr/share/keyrings/apache-arrow-archive-keyring.gpg && \
-#     echo "deb [signed-by=/usr/share/keyrings/apache-arrow-archive-keyring.gpg] https://apache.jfrog.io/artifactory/arrow/ubuntu/$(lsb_release -cs) main" > /etc/apt/sources.list.d/apache-arrow.list && \
-#     echo "deb-src [signed-by=/usr/share/keyrings/apache-arrow-archive-keyring.gpg] https://apache.jfrog.io/artifactory/arrow/ubuntu/$(lsb_release -cs) main" >> /etc/apt/sources.list.d/apache-arrow.list
-
 # 更新APT索引并安装
 
 RUN apt-get update && apt-get install -y \
@@ -63,13 +57,29 @@ RUN conda config --append channels conda-forge
 RUN conda config --append channels defaults
 RUN conda config --append channels free
 RUN conda env update -n base -f requirements.yml
+RUN pip install cmudict
+RUN pip install countryinfo
+RUN pip install distro-info
+RUN pip install duckduckgo-search
+RUN pip install extract-msg
+RUN pip install fastjsonschema
+RUN pip install flask-cachebuster
+RUN pip install imgkit
+RUN pip install ipython-genutils
+RUN pip install kerykeion
+RUN pip install korean-lunar-calendar
+RUN pip install opencv-python
+RUN pip install pdfkit
+RUN pip install pronouncing
+RUN pip install pylog
+RUN pip install pyprover
+RUN pip install pyswisseph
+RUN pip install pyth3
+RUN pip install pyttsx3
+RUN pip install soundfile
+RUN pip install tabula
+RUN pip install xml-python
 
-#RUN pip install --retries 20 -i https://repo.sensetime.com/repository/pypi/simple/ \
-#  --no-cache-dir -r requirements.txt
-
-#RUN chown jovyan:users /usr/local/bin/bootstrap-kernel.sh && \
-#	chmod 0755 /usr/local/bin/bootstrap-kernel.sh && \
-#	chown -R jovyan:users /usr/local/bin/kernel-launchers
 
 USER jovyan
 RUN mkdir /mnt/data
