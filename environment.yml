@@ -1,0 +1,8 @@
+name: eg-runtime
+channels:
+  - conda-forge
+  - defaults
+  - free
+dependencies:
+  - pip
+  - python=3.10
