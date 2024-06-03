@@ -427,7 +427,7 @@ dependencies:
   - quart
   - rarfile
   - rasterio
-  - rdflib>==6.0.0
+  - rdflib>=6.0.0
   - re2==2023.02.02
   - readline==8.1.2
   - regex
