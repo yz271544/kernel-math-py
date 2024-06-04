@@ -8,6 +8,9 @@ RUN sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
 
 ENV PATH=$PATH:$CONDA_DIR/bin
 
+RUN conda config --append channels conda-forge
+RUN conda config --append channels defaults
+RUN conda config --append channels free
 RUN conda install --quiet --yes \
     cffi \
     future \
@@ -53,9 +56,6 @@ RUN apt-get update && apt-get install -y \
     # libparquet-glib-dev
 
 COPY requirements.yml .
-RUN conda config --append channels conda-forge
-RUN conda config --append channels defaults
-RUN conda config --append channels free
 RUN conda env update -n base -f requirements.yml --debug
 RUN pip install cmudict
 RUN pip install countryinfo
@@ -81,6 +81,7 @@ RUN pip install soundfile
 RUN pip install tabula
 RUN pip install xml-python
 RUN pip install jupyter-client
+RUN pip install zopfli
 
 USER jovyan
 RUN mkdir /mnt/data
