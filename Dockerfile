@@ -3,8 +3,8 @@ ARG BASE_CONTAINER=elyra/kernel-py:3.2.3
 FROM $BASE_CONTAINER
 
 USER root
-RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
-RUN sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+#RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+#RUN sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
 
 ENV PATH=$PATH:$CONDA_DIR/bin
 
