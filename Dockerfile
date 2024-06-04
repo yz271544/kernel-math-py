@@ -53,34 +53,10 @@ RUN apt-get update && apt-get install -y \
     # libparquet-glib-dev
 
 COPY requirements.yml .
-COPY requirements1.yml .
-COPY requirements2.yml .
-COPY requirements3.yml .
-COPY requirements4.yml .
-COPY requirements5.yml .
-COPY requirements6.yml .
-COPY requirements7.yml .
-COPY requirements8.yml .
-COPY requirements9.yml .
-COPY requirements10.yml .
-COPY requirements11.yml .
-COPY requirements12.yml .
 RUN conda config --append channels conda-forge
 RUN conda config --append channels defaults
 RUN conda config --append channels free
-RUN conda env update -n base -f requirements.yml
-RUN conda env update -n base -f requirements1.yml
-RUN conda env update -n base -f requirements2.yml
-RUN conda env update -n base -f requirements3.yml
-RUN conda env update -n base -f requirements4.yml
-RUN conda env update -n base -f requirements5.yml
-RUN conda env update -n base -f requirements6.yml
-RUN conda env update -n base -f requirements7.yml
-RUN conda env update -n base -f requirements8.yml
-RUN conda env update -n base -f requirements9.yml
-RUN conda env update -n base -f requirements10.yml
-RUN conda env update -n base -f requirements11.yml
-RUN conda env update -n base -f requirements12.yml
+RUN conda env update -n base -f requirements.yml --debug
 RUN pip install cmudict
 RUN pip install countryinfo
 RUN pip install distro-info
@@ -88,6 +64,7 @@ RUN pip install duckduckgo-search
 RUN pip install extract-msg
 RUN pip install fastjsonschema
 RUN pip install flask-cachebuster
+RUN pip install gensim
 RUN pip install imgkit
 RUN pip install ipython-genutils
 RUN pip install kerykeion
