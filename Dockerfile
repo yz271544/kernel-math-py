@@ -3,8 +3,8 @@ ARG BASE_CONTAINER=elyra/kernel-py:3.2.3
 FROM $BASE_CONTAINER
 
 USER root
-RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
-RUN sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+#RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+#RUN sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
 
 ENV PATH=$PATH:$CONDA_DIR/bin
 
@@ -36,13 +36,7 @@ RUN apt-get update && apt-get install -y \
 ENV HDF5_DIR=/usr/lib/x86_64-linux-gnu/hdf5/serial/
 ENV NETCDF4_DIR=/usr/
 
-RUN apt-get update && apt-get install -y portaudio19-dev
-
-RUN apt-get update && apt-get install -y graphviz libgraphviz-dev
-
-RUN apt-get update && apt-get install -y libgeos-dev
-
-RUN apt-get update && apt-get install -y gnupg lsb-release wget ca-certificates
+RUN apt-get update && apt-get install -y portaudio19-dev graphviz libgraphviz-dev libgeos-dev gnupg lsb-release wget ca-certificates
 
 # 更新APT索引并安装
 
