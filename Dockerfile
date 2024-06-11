@@ -17,7 +17,7 @@ RUN conda install --quiet --yes \
     pycryptodomex && \
     conda clean --all && \
     fix-permissions $CONDA_DIR && \
-    fix-permissions /home/$NB_USER 
+    fix-permissions /home/$NB_USER
 
 # ADD jupyter_enterprise_gateway_kernel_image_files-3.2.3.tar.gz /usr/local/bin/
 RUN apt-get clean
@@ -42,42 +42,48 @@ RUN apt-get update && apt-get install -y portaudio19-dev graphviz libgraphviz-de
 
 RUN apt-get update && apt-get install -y \
     build-essential \
-    cmake 
-    # libarrow-dev \
-    # libarrow-glib-dev \
-    # libarrow-dataset-dev \
-    # libparquet-dev \
-    # libparquet-glib-dev
+    cmake
+# libarrow-dev \
+# libarrow-glib-dev \
+# libarrow-dataset-dev \
+# libparquet-dev \
+# libparquet-glib-dev
 
-COPY requirements.yml .
-RUN conda env update -n base -f requirements.yml --debug
-RUN pip install cmudict
-RUN pip install countryinfo
-RUN pip install distro-info
-RUN pip install duckduckgo-search
-RUN pip install extract-msg
-RUN pip install fastjsonschema
-RUN pip install flask-cachebuster
-RUN pip install gensim
-RUN pip install imgkit
-RUN pip install ipython-genutils
-RUN pip install kerykeion
-RUN pip install korean-lunar-calendar
-RUN pip install opencv-python
-RUN pip install pdfkit
-RUN pip install pronouncing
-RUN pip install pylog
-RUN pip install pyprover
-RUN pip install pyswisseph
-RUN pip install pyth3
-RUN pip install pyttsx3
-RUN pip install soundfile
-RUN pip install tabula
-RUN pip install xml-python
-RUN pip install jupyter-client
-RUN pip install zopfli
+# COPY requirements.yml .
+# RUN conda env update -n base -f requirements.yml --debug
+# RUN pip install cmudict
+# RUN pip install countryinfo
+# RUN pip install distro-info
+# RUN pip install duckduckgo-search
+# RUN pip install extract-msg
+# RUN pip install fastjsonschema
+# RUN pip install flask-cachebuster
+# RUN pip install gensim
+# RUN pip install imgkit
+# RUN pip install ipython-genutils
+# RUN pip install kerykeion
+# RUN pip install korean-lunar-calendar
+# RUN pip install opencv-python
+# RUN pip install pdfkit
+# RUN pip install pronouncing
+# RUN pip install pylog
+# RUN pip install pyprover
+# RUN pip install pyswisseph
+# RUN pip install pyth3
+# RUN pip install pyttsx3
+# RUN pip install soundfile
+# RUN pip install tabula
+# RUN pip install xml-python
+# RUN pip install jupyter-client
+# RUN pip install zopfli
 
 USER jovyan
+WORKDIR /home/jovyan/work
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
 RUN mkdir /mnt/data
 
 RUN chmod 777 /mnt/data
