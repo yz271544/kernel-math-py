@@ -348,3 +348,6 @@ zstd                      1.5.2                h3eb15da_6    conda-forge
 camelot-py==0.10.1
 
 cmudict==1.0.18
+pronouncing==0.2.0
+markdownify==0.9.3
+cairocffi==1.6.1

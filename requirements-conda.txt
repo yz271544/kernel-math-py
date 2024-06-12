@@ -23,3 +23,6 @@ typing_utils==0.1.0
 ucx==1.14.1
 xyzservices==2023.5.0
 camelot-py==0.10.1
+markdownify==0.11.6
+brotli==1.1.0
+cairocffi>=1.6.1
