@@ -42,7 +42,10 @@ RUN apt-get update && apt-get install -y portaudio19-dev graphviz libgraphviz-de
 
 RUN apt-get update && apt-get install -y \
     build-essential \
-    cmake
+    cmake \
+    llvm-14 \
+    llvm-14-dev
+
 # libarrow-dev \
 # libarrow-glib-dev \
 # libarrow-dataset-dev \
@@ -79,10 +82,12 @@ RUN apt-get update && apt-get install -y \
 
 USER jovyan
 WORKDIR /home/jovyan/work
+COPY requirements-pip.txt .
+COPY requirements-conda.txt .
 
-COPY requirements.txt .
+RUN conda install --yes --file requirements-conda.txt
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements-pip.txt
 
 RUN mkdir /mnt/data
 
