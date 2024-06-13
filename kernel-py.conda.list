@@ -351,3 +351,5 @@ cmudict==1.0.18
 pronouncing==0.2.0
 markdownify==0.9.3
 cairocffi==1.6.1
+brotli==1.1.0
+cairocffi>=1.6.1
