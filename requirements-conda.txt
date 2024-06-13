@@ -25,4 +25,4 @@ xyzservices==2023.5.0
 camelot-py==0.10.1
 markdownify==0.11.6
 minikanren==1.0.3
-brotli>=1.0.1
+brotli==1.1.0
