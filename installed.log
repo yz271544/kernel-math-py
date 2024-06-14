@@ -1,0 +1,746 @@
+(base) root@1d8aa3f6cad4:~/work# pip install -r requirements-pip1.txt
+WARNING: The directory '/home/jovyan/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Collecting affine==2.4.0
+  Downloading affine-2.4.0-py3-none-any.whl (15 kB)
+Collecting aiohttp==3.8.6
+  Downloading aiohttp-3.8.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 1.7 MB/s eta 0:00:00
+Collecting aiosignal==1.3.1
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting analytics-python==1.4.post1
+  Downloading analytics_python-1.4.post1-py2.py3-none-any.whl (23 kB)
+Collecting anytree==2.8.0
+  Downloading anytree-2.8.0-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 2.8 MB/s eta 0:00:00
+Collecting arviz==0.17.0
+  Downloading arviz-0.17.0-py3-none-any.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 1.8 MB/s eta 0:00:00
+Collecting asn1crypto==1.5.1
+  Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.0/105.0 kB 2.2 MB/s eta 0:00:00
+Collecting async-timeout==4.0.3
+  Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
+Requirement already satisfied: audioread==3.0.1 in /opt/conda/lib/python3.10/site-packages (from -r requirements-pip1.txt (line 9)) (3.0.1)
+Collecting backoff==1.10.0
+  Downloading backoff-1.10.0-py2.py3-none-any.whl (31 kB)
+Collecting basemap==1.3.9
+  Downloading basemap-1.3.9-cp310-cp310-manylinux1_x86_64.whl (862 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 862.2/862.2 kB 1.8 MB/s eta 0:00:00
+Collecting basemap-data==1.3.2
+  Downloading basemap_data-1.3.2-py2.py3-none-any.whl (30.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 30.5/30.5 MB 1.8 MB/s eta 0:00:00
+Collecting bcrypt==4.1.2
+  Downloading bcrypt-4.1.2-cp39-abi3-manylinux_2_28_x86_64.whl (698 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 698.9/698.9 kB 1.8 MB/s eta 0:00:00
+Collecting blis==0.7.11
+  Downloading blis-0.7.11-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 1.8 MB/s eta 0:00:00
+Collecting blosc2==2.0.0
+  Downloading blosc2-2.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 1.8 MB/s eta 0:00:00
+Collecting branca==0.7.1
+  Downloading branca-0.7.1-py3-none-any.whl (25 kB)
+Collecting cachetools==5.3.2
+  Downloading cachetools-5.3.2-py3-none-any.whl (9.3 kB)
+Collecting cairosvg==2.5.2
+  Downloading CairoSVG-2.5.2-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.8/45.8 kB 3.1 MB/s eta 0:00:00
+Collecting catalogue==2.0.10
+  Downloading catalogue-2.0.10-py3-none-any.whl (17 kB)
+Collecting cftime==1.6.3
+  Downloading cftime-1.6.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 1.8 MB/s eta 0:00:00
+Collecting chardet==3.0.4
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.4/133.4 kB 2.1 MB/s eta 0:00:00
+Collecting click-plugins==1.1.1
+  Downloading click_plugins-1.1.1-py2.py3-none-any.whl (7.5 kB)
+Collecting cligj==0.7.2
+  Downloading cligj-0.7.2-py3-none-any.whl (7.1 kB)
+Collecting cmake==3.28.3
+  Downloading cmake-3.28.3-py2.py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (26.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.3/26.3 MB 1.9 MB/s eta 0:00:00
+Collecting confection==0.1.4
+  Downloading confection-0.1.4-py3-none-any.whl (35 kB)
+Collecting countryinfo==0.1.2
+  Downloading countryinfo-0.1.2-py3-none-any.whl (602 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 602.2/602.2 kB 1.8 MB/s eta 0:00:00
+Collecting cssselect2==0.7.0
+  Downloading cssselect2-0.7.0-py3-none-any.whl (15 kB)
+Collecting cymem==2.0.8
+  Downloading cymem-2.0.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.1/46.1 kB 2.5 MB/s eta 0:00:00
+Collecting databricks-sql-connector==0.9.1
+  Downloading databricks_sql_connector-0.9.1-py3-none-any.whl (36 kB)
+Collecting dlib==19.24.2
+  Downloading dlib-19.24.2.tar.gz (11.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 1.8 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting dnspython==2.6.1
+  Downloading dnspython-2.6.1-py3-none-any.whl (307 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 307.7/307.7 kB 1.9 MB/s eta 0:00:00
+Collecting docx2txt==0.8
+  Downloading docx2txt-0.8.tar.gz (2.8 kB)
+  Preparing metadata (setup.py) ... done
+Collecting einops==0.3.2
+  Downloading einops-0.3.2-py3-none-any.whl (25 kB)
+Collecting email-validator==2.1.0.post1
+  Downloading email_validator-2.1.0.post1-py3-none-any.whl (32 kB)
+Collecting exceptiongroup==1.2.0
+  Downloading exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+Collecting exchange-calendars==3.4
+  Downloading exchange_calendars-3.4.tar.gz (147 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.4/147.4 kB 2.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting faker==8.13.2
+  Downloading Faker-8.13.2-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 1.8 MB/s eta 0:00:00
+Collecting fastapi==0.95.2
+  Downloading fastapi-0.95.2-py3-none-any.whl (56 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 kB 2.6 MB/s eta 0:00:00
+Collecting fastjsonschema==2.19.1
+  Downloading fastjsonschema-2.19.1-py3-none-any.whl (23 kB)
+Collecting fastprogress==1.0.3
+  Downloading fastprogress-1.0.3-py3-none-any.whl (12 kB)
+Collecting ffmpeg-python==0.2.0
+  Downloading ffmpeg_python-0.2.0-py3-none-any.whl (25 kB)
+Collecting ffmpy==0.3.2
+  Downloading ffmpy-0.3.2.tar.gz (5.5 kB)
+  Preparing metadata (setup.py) ... done
+Collecting fiona==1.9.2
+  Downloading Fiona-1.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.0/16.0 MB 1.9 MB/s eta 0:00:00
+Collecting flask==3.0.2
+  Downloading flask-3.0.2-py3-none-any.whl (101 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.3/101.3 kB 2.2 MB/s eta 0:00:00
+Collecting flask-cachebuster==1.0.0
+  Downloading Flask-CacheBuster-1.0.0.tar.gz (3.1 kB)
+  Preparing metadata (setup.py) ... done
+Collecting flask-cors==4.0.0
+  Downloading Flask_Cors-4.0.0-py2.py3-none-any.whl (14 kB)
+Collecting flask-login==0.6.3
+  Downloading Flask_Login-0.6.3-py3-none-any.whl (17 kB)
+Collecting folium==0.12.1
+  Downloading folium-0.12.1-py2.py3-none-any.whl (94 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.9/94.9 kB 2.2 MB/s eta 0:00:00
+Collecting fpdf==1.7.2
+  Downloading fpdf-1.7.2.tar.gz (39 kB)
+  Preparing metadata (setup.py) ... done
+Collecting frozenlist==1.4.1
+  Downloading frozenlist-1.4.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (239 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.5/239.5 kB 1.9 MB/s eta 0:00:00
+Collecting fuzzywuzzy==0.18.0
+  Downloading fuzzywuzzy-0.18.0-py2.py3-none-any.whl (18 kB)
+Collecting gensim==4.3.1
+  Downloading gensim-4.3.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (26.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.4/26.4 MB 1.8 MB/s eta 0:00:00
+Collecting geographiclib==1.52
+  Downloading geographiclib-1.52-py3-none-any.whl (38 kB)
+Collecting geopandas==0.10.2
+  Downloading geopandas-0.10.2-py2.py3-none-any.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 1.8 MB/s eta 0:00:00
+Collecting geopy==2.2.0
+  Downloading geopy-2.2.0-py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.9/118.9 kB 2.1 MB/s eta 0:00:00
+Collecting gradio==2.2.15
+  Downloading gradio-2.2.15-py3-none-any.whl (3.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 1.8 MB/s eta 0:00:00
+Collecting graphviz==0.17
+  Downloading graphviz-0.17-py3-none-any.whl (18 kB)
+Collecting gtts==2.2.3
+  Downloading gTTS-2.2.3-py3-none-any.whl (25 kB)
+Collecting h11==0.14.0
+  Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 2.2 MB/s eta 0:00:00
+Collecting h2==4.1.0
+  Downloading h2-4.1.0-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 2.2 MB/s eta 0:00:00
+Collecting h5netcdf==1.3.0
+  Downloading h5netcdf-1.3.0-py3-none-any.whl (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 2.9 MB/s eta 0:00:00
+Collecting hpack==4.0.0
+  Downloading hpack-4.0.0-py3-none-any.whl (32 kB)
+Collecting html5lib==1.1
+  Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.2/112.2 kB 2.0 MB/s eta 0:00:00
+Collecting httpcore==1.0.4
+  Downloading httpcore-1.0.4-py3-none-any.whl (77 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.8/77.8 kB 2.2 MB/s eta 0:00:00
+Collecting httptools==0.6.1
+  Downloading httptools-0.6.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (341 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.4/341.4 kB 1.9 MB/s eta 0:00:00
+Collecting httpx==0.27.0
+  Downloading httpx-0.27.0-py3-none-any.whl (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.6/75.6 kB 2.2 MB/s eta 0:00:00
+Collecting hypercorn==0.14.3
+  Downloading Hypercorn-0.14.3-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.9/57.9 kB 2.3 MB/s eta 0:00:00
+Collecting hyperframe==6.0.1
+  Downloading hyperframe-6.0.1-py3-none-any.whl (12 kB)
+Collecting imageio-ffmpeg==0.4.9
+  Downloading imageio_ffmpeg-0.4.9-py3-none-manylinux2010_x86_64.whl (26.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.9/26.9 MB 1.8 MB/s eta 0:00:00
+Collecting imgkit==1.2.2
+  Downloading imgkit-1.2.2-py3-none-any.whl (10 kB)
+Collecting importlib-resources==6.1.1
+  Downloading importlib_resources-6.1.1-py3-none-any.whl (33 kB)
+Collecting iniconfig==2.0.0
+  Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting isodate==0.6.1
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 2.8 MB/s eta 0:00:00
+Collecting itsdangerous==2.1.2
+  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting jax==0.2.28
+  Downloading jax-0.2.28.tar.gz (887 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 887.3/887.3 kB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting jsonpickle==3.0.3
+  Downloading jsonpickle-3.0.3-py3-none-any.whl (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 kB 2.8 MB/s eta 0:00:00
+Collecting jsonschema-specifications==2023.12.1
+  Downloading jsonschema_specifications-2023.12.1-py3-none-any.whl (18 kB)
+Collecting keras==2.6.0
+  Downloading keras-2.6.0-py2.py3-none-any.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 1.8 MB/s eta 0:00:00
+Collecting kerykeion==2.1.16
+  Downloading kerykeion-2.1.16-py3-none-any.whl (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.9/79.9 kB 2.2 MB/s eta 0:00:00
+Collecting korean-lunar-calendar==0.3.1
+  Downloading korean_lunar_calendar-0.3.1-py3-none-any.whl (9.0 kB)
+Collecting langcodes==3.3.0
+  Downloading langcodes-3.3.0-py3-none-any.whl (181 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.6/181.6 kB 1.9 MB/s eta 0:00:00
+Collecting lazy-loader==0.3
+  Downloading lazy_loader-0.3-py3-none-any.whl (9.1 kB)
+Collecting lit==17.0.6
+  Downloading lit-17.0.6.tar.gz (153 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 153.0/153.0 kB 1.9 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting loguru==0.5.3
+  Downloading loguru-0.5.3-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 kB 2.2 MB/s eta 0:00:00
+Collecting lxml==5.1.0
+  Downloading lxml-5.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 1.8 MB/s eta 0:00:00
+Collecting markdown2==2.4.12
+  Downloading markdown2-2.4.12-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 kB 4.1 MB/s eta 0:00:00
+Collecting matplotlib==3.6.3
+  Downloading matplotlib-3.6.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 1.8 MB/s eta 0:00:00
+Collecting matplotlib-venn==0.11.6
+  Downloading matplotlib-venn-0.11.6.tar.gz (29 kB)
+  Preparing metadata (setup.py) ... done
+Collecting mizani==0.10.0
+  Downloading mizani-0.10.0-py3-none-any.whl (114 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.1/114.1 kB 2.0 MB/s eta 0:00:00
+Collecting mne==0.23.4
+  Downloading mne-0.23.4-py3-none-any.whl (6.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 1.8 MB/s eta 0:00:00
+Collecting monotonic==1.6
+  Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+Collecting moviepy==1.0.3
+  Downloading moviepy-1.0.3.tar.gz (388 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 388.3/388.3 kB 1.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting msgpack==1.0.7
+  Downloading msgpack-1.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (530 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 530.8/530.8 kB 1.8 MB/s eta 0:00:00
+Collecting mtcnn==0.1.1
+  Downloading mtcnn-0.1.1-py3-none-any.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 1.8 MB/s eta 0:00:00
+Collecting multidict==6.0.5
+  Downloading multidict-6.0.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (124 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.3/124.3 kB 2.2 MB/s eta 0:00:00
+Collecting munch==4.0.0
+  Downloading munch-4.0.0-py2.py3-none-any.whl (9.9 kB)
+Collecting murmurhash==1.0.10
+  Downloading murmurhash-1.0.10-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (29 kB)
+Collecting mutagen==1.45.1
+  Downloading mutagen-1.45.1-py3-none-any.whl (218 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.7/218.7 kB 1.9 MB/s eta 0:00:00
+Collecting nashpy==0.0.35
+  Downloading nashpy-0.0.35-py3-none-any.whl (25 kB)
+Collecting netcdf4==1.6.5
+  Downloading netCDF4-1.6.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 1.8 MB/s eta 0:00:00
+Collecting nltk==3.6.3
+  Downloading nltk-3.6.3-py3-none-any.whl (1.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 1.8 MB/s eta 0:00:00
+Collecting numpy-financial==1.0.0
+  Downloading numpy_financial-1.0.0-py3-none-any.whl (14 kB)
+Collecting nvidia-cublas-cu11==11.10.3.66
+  Downloading nvidia_cublas_cu11-11.10.3.66-py3-none-manylinux1_x86_64.whl (317.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.1/317.1 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-cuda-cupti-cu11==11.7.101
+  Downloading nvidia_cuda_cupti_cu11-11.7.101-py3-none-manylinux1_x86_64.whl (11.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-cuda-nvrtc-cu11==11.7.99
+  Downloading nvidia_cuda_nvrtc_cu11-11.7.99-2-py3-none-manylinux1_x86_64.whl (21.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.0/21.0 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-cuda-runtime-cu11==11.7.99
+  Downloading nvidia_cuda_runtime_cu11-11.7.99-py3-none-manylinux1_x86_64.whl (849 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 849.3/849.3 kB 1.8 MB/s eta 0:00:00
+Collecting nvidia-cudnn-cu11==8.5.0.96
+  Downloading nvidia_cudnn_cu11-8.5.0.96-2-py3-none-manylinux1_x86_64.whl (557.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 557.1/557.1 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-cufft-cu11==10.9.0.58
+  Downloading nvidia_cufft_cu11-10.9.0.58-py3-none-manylinux1_x86_64.whl (168.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 168.4/168.4 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-curand-cu11==10.2.10.91
+  Downloading nvidia_curand_cu11-10.2.10.91-py3-none-manylinux1_x86_64.whl (54.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.6/54.6 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-cusolver-cu11==11.4.0.1
+  Downloading nvidia_cusolver_cu11-11.4.0.1-2-py3-none-manylinux1_x86_64.whl (102.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.6/102.6 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-cusparse-cu11==11.7.4.91
+  Downloading nvidia_cusparse_cu11-11.7.4.91-py3-none-manylinux1_x86_64.whl (173.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.2/173.2 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-nccl-cu11==2.14.3
+  Downloading nvidia_nccl_cu11-2.14.3-py3-none-manylinux1_x86_64.whl (177.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 177.1/177.1 MB 1.8 MB/s eta 0:00:00
+Collecting nvidia-nvtx-cu11==11.7.91
+  Downloading nvidia_nvtx_cu11-11.7.91-py3-none-manylinux1_x86_64.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.6/98.6 kB 2.2 MB/s eta 0:00:00
+Collecting odfpy==1.4.1
+  Downloading odfpy-1.4.1.tar.gz (717 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 717.0/717.0 kB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting opencv-python==4.5.5.62
+  Downloading opencv_python-4.5.5.62-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (60.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 MB 1.8 MB/s eta 0:00:00
+Collecting opt-einsum==3.3.0
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 2.4 MB/s eta 0:00:00
+Collecting orjson==3.9.15
+  Downloading orjson-3.9.15-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (138 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.5/138.5 kB 2.0 MB/s eta 0:00:00
+Collecting oscrypto==1.3.0
+  Downloading oscrypto-1.3.0-py2.py3-none-any.whl (194 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 194.6/194.6 kB 1.9 MB/s eta 0:00:00
+Collecting paramiko==3.4.0
+  Downloading paramiko-3.4.0-py3-none-any.whl (225 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 225.9/225.9 kB 1.9 MB/s eta 0:00:00
+Collecting pathlib-abc==0.1.1
+  Downloading pathlib_abc-0.1.1-py3-none-any.whl (23 kB)
+Collecting pathy==0.11.0
+  Downloading pathy-0.11.0-py3-none-any.whl (47 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.3/47.3 kB 2.5 MB/s eta 0:00:00
+Collecting pdf2image==1.16.3
+  Downloading pdf2image-1.16.3-py3-none-any.whl (11 kB)
+Collecting pdfkit==0.6.1
+  Downloading pdfkit-0.6.1-py3-none-any.whl (12 kB)
+Collecting pdfminer-six==20220319
+  Downloading pdfminer.six-20220319-py3-none-any.whl (5.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 1.8 MB/s eta 0:00:00
+Collecting pdfplumber==0.6.2
+  Downloading pdfplumber-0.6.2-py3-none-any.whl (36 kB)
+Collecting pdfrw==0.4
+  Downloading pdfrw-0.4-py2.py3-none-any.whl (69 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.5/69.5 kB 2.2 MB/s eta 0:00:00
+Collecting plotly==5.3.0
+  Downloading plotly-5.3.0-py2.py3-none-any.whl (22.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 22.9/22.9 MB 1.8 MB/s eta 0:00:00
+Collecting plotnine==0.10.1
+  Downloading plotnine-0.10.1-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 1.8 MB/s eta 0:00:00
+Collecting preshed==3.0.9
+  Downloading preshed-3.0.9-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (156 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 156.9/156.9 kB 2.0 MB/s eta 0:00:00
+Collecting priority==2.0.0
+  Downloading priority-2.0.0-py3-none-any.whl (8.9 kB)
+Collecting proglog==0.1.10
+  Downloading proglog-0.1.10-py3-none-any.whl (6.1 kB)
+Collecting prometheus-client==0.20.0
+  Downloading prometheus_client-0.20.0-py3-none-any.whl (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 kB 2.4 MB/s eta 0:00:00
+Collecting py==1.11.0
+  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 kB 2.1 MB/s eta 0:00:00
+Collecting pycountry==20.7.3
+  Downloading pycountry-20.7.3.tar.gz (10.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting pycryptodome==3.20.0
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 1.8 MB/s eta 0:00:00
+Collecting pydantic==1.10.2
+  Downloading pydantic-1.10.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 1.8 MB/s eta 0:00:00
+Collecting pydot==1.4.2
+  Downloading pydot-1.4.2-py2.py3-none-any.whl (21 kB)
+Collecting pydub==0.25.1
+  Downloading pydub-0.25.1-py2.py3-none-any.whl (32 kB)
+Collecting pydyf==0.8.0
+  Downloading pydyf-0.8.0-py3-none-any.whl (7.5 kB)
+Collecting pygraphviz==1.7
+  Downloading pygraphviz-1.7.zip (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.8/118.8 kB 2.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting pylog==1.1
+  Downloading pylog-1.1-py3-none-any.whl (24 kB)
+Collecting pyluach==2.2.0
+  Downloading pyluach-2.2.0-py3-none-any.whl (25 kB)
+Collecting pymc==4.0.1
+  Downloading pymc-4.0.1-py3-none-any.whl (555 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 555.9/555.9 kB 1.8 MB/s eta 0:00:00
+Collecting pymupdf==1.21.1
+  Downloading PyMuPDF-1.21.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.0/14.0 MB 1.8 MB/s eta 0:00:00
+Collecting pynacl==1.5.0
+  Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 856.7/856.7 kB 1.8 MB/s eta 0:00:00
+Collecting pypandoc==1.6.3
+  Downloading pypandoc-1.6.3.tar.gz (25 kB)
+  Preparing metadata (setup.py) ... done
+Collecting pypdf2==1.28.6
+  Downloading PyPDF2-1.28.6-py3-none-any.whl (87 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.1/87.1 kB 2.0 MB/s eta 0:00:00
+Collecting pyphen==0.14.0
+  Downloading pyphen-0.14.0-py3-none-any.whl (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 1.8 MB/s eta 0:00:00
+Collecting pyproj==3.6.1
+  Downloading pyproj-3.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 1.8 MB/s eta 0:00:00
+Collecting pyprover==0.5.6
+  Downloading pyprover-0.5.6-py2.py3-none-any.whl (37 kB)
+Collecting pyshp==2.3.1
+  Downloading pyshp-2.3.1-py2.py3-none-any.whl (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.5/46.5 kB 2.7 MB/s eta 0:00:00
+Collecting pyswisseph==2.10.3.2
+  Downloading pyswisseph-2.10.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 1.8 MB/s eta 0:00:00
+Collecting pytesseract==0.3.8
+  Downloading pytesseract-0.3.8.tar.gz (14 kB)
+  Preparing metadata (setup.py) ... done
+Collecting pytest==6.2.5
+  Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 280.7/280.7 kB 1.9 MB/s eta 0:00:00
+Collecting pyth3==0.7
+  Downloading pyth3-0.7-py3-none-any.whl (29 kB)
+Collecting python-docx==0.8.11
+  Downloading python-docx-0.8.11.tar.gz (5.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting python-dotenv==1.0.1
+  Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+Collecting python-multipart==0.0.9
+  Downloading python_multipart-0.0.9-py3-none-any.whl (22 kB)
+Collecting python-pptx==0.6.21
+  Downloading python-pptx-0.6.21.tar.gz (10.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting pyttsx3==2.9
+  Downloading pyttsx3-2.9-py3-none-any.whl (39 kB)
+Collecting pyxlsb==1.0.8
+  Downloading pyxlsb-1.0.8-py2.py3-none-any.whl (23 kB)
+Collecting pyzbar==0.1.8
+  Downloading pyzbar-0.1.8-py2.py3-none-any.whl (28 kB)
+Collecting qrcode==7.3
+  Downloading qrcode-7.3.tar.gz (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.4/43.4 kB 2.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting rarfile==4
+  Downloading rarfile-4.0-py3-none-any.whl (28 kB)
+Collecting rasterio==1.3.3
+  Downloading rasterio-1.3.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.9/20.9 MB 1.8 MB/s eta 0:00:00
+Collecting rdflib==6.0.0
+  Downloading rdflib-6.0.0-py3-none-any.whl (376 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 376.5/376.5 kB 1.9 MB/s eta 0:00:00
+Collecting referencing==0.33.0
+  Downloading referencing-0.33.0-py3-none-any.whl (26 kB)
+Collecting regex==2023.12.25
+  Downloading regex-2023.12.25-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (773 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 774.0/774.0 kB 1.8 MB/s eta 0:00:00
+Collecting reportlab==3.6.12
+  Downloading reportlab-3.6.12-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 1.8 MB/s eta 0:00:00
+Collecting rpds-py==0.18.0
+  Downloading rpds_py-0.18.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 1.8 MB/s eta 0:00:00
+Collecting sentencepiece==0.2.0
+  Downloading sentencepiece-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 1.8 MB/s eta 0:00:00
+Collecting shap==0.39.0
+  Downloading shap-0.39.0.tar.gz (356 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 356.2/356.2 kB 1.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting shapely==1.7.1
+  Downloading Shapely-1.7.1.tar.gz (383 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 383.2/383.2 kB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting slicer==0.0.7
+  Downloading slicer-0.0.7-py3-none-any.whl (14 kB)
+Collecting smart-open==6.4.0
+  Downloading smart_open-6.4.0-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 kB 2.5 MB/s eta 0:00:00
+Collecting snowflake-connector-python==2.7.12
+  Downloading snowflake_connector_python-2.7.12-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (21.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.3/21.3 MB 1.9 MB/s eta 0:00:00
+Collecting snuggs==1.4.7
+  Downloading snuggs-1.4.7-py3-none-any.whl (5.4 kB)
+Collecting soundfile==0.10.2
+  Downloading SoundFile-0.10.2-py2.py3-none-any.whl (25 kB)
+Collecting spacy==3.4.4
+  Downloading spacy-3.4.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.5/6.5 MB 1.8 MB/s eta 0:00:00
+Collecting spacy-legacy==3.0.12
+  Downloading spacy_legacy-3.0.12-py2.py3-none-any.whl (29 kB)
+Collecting spacy-loggers==1.0.5
+  Downloading spacy_loggers-1.0.5-py3-none-any.whl (22 kB)
+Collecting srsly==2.4.8
+  Downloading srsly-2.4.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (493 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 493.0/493.0 kB 1.8 MB/s eta 0:00:00
+Collecting stack-data==0.6.3
+  Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Collecting starlette==0.27.0
+  Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 2.2 MB/s eta 0:00:00
+Collecting svglib==1.1.0
+  Downloading svglib-1.1.0.tar.gz (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting svgwrite==1.4.1
+  Downloading svgwrite-1.4.1-py3-none-any.whl (66 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 3.0 MB/s eta 0:00:00
+Collecting tabula==1.0.5
+  Downloading tabula-1.0.5.tar.gz (9.5 kB)
+  Preparing metadata (setup.py) ... done
+Collecting tabulate==0.8.9
+  Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+Collecting tenacity==8.2.3
+  Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
+Collecting text-unidecode==1.3
+  Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.2/78.2 kB 2.1 MB/s eta 0:00:00
+Collecting textblob==0.15.3
+  Downloading textblob-0.15.3-py2.py3-none-any.whl (636 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 636.5/636.5 kB 1.8 MB/s eta 0:00:00
+Collecting thinc==8.1.12
+  Downloading thinc-8.1.12-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (919 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 919.6/919.6 kB 1.8 MB/s eta 0:00:00
+Collecting thrift==0.16.0
+  Downloading thrift-0.16.0.tar.gz (59 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.6/59.6 kB 2.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting toml==0.10.2
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting torch==2.0.1
+  Downloading torch-2.0.1-cp310-cp310-manylinux1_x86_64.whl (619.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 619.9/619.9 MB 1.8 MB/s eta 0:00:00
+Collecting torchaudio==2.0.2
+  Downloading torchaudio-2.0.2-cp310-cp310-manylinux1_x86_64.whl (4.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 1.8 MB/s eta 0:00:00
+Collecting torchtext==0.6.0
+  Downloading torchtext-0.6.0-py3-none-any.whl (64 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.2/64.2 kB 2.3 MB/s eta 0:00:00
+Collecting torchvision==0.15.2
+  Downloading torchvision-0.15.2-cp310-cp310-manylinux1_x86_64.whl (6.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 1.8 MB/s eta 0:00:00
+Collecting trimesh==3.9.29
+  Downloading trimesh-3.9.29-py3-none-any.whl (635 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 635.1/635.1 kB 1.9 MB/s eta 0:00:00
+Collecting triton==2.0.0
+  Downloading triton-2.0.0-1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (63.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.3/63.3 MB 1.8 MB/s eta 0:00:00
+Collecting typer==0.7.0
+  Downloading typer-0.7.0-py3-none-any.whl (38 kB)
+Collecting ujson==5.9.0
+  Downloading ujson-5.9.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (53 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.2/53.2 kB 2.3 MB/s eta 0:00:00
+Collecting uvicorn==0.19.0
+  Downloading uvicorn-0.19.0-py3-none-any.whl (56 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.6/56.6 kB 2.3 MB/s eta 0:00:00
+Collecting uvloop==0.19.0
+  Downloading uvloop-0.19.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 1.8 MB/s eta 0:00:00
+Collecting wand==0.6.13
+  Downloading Wand-0.6.13-py2.py3-none-any.whl (143 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 143.8/143.8 kB 2.1 MB/s eta 0:00:00
+Collecting wasabi==0.10.1
+  Downloading wasabi-0.10.1-py3-none-any.whl (26 kB)
+Collecting watchfiles==0.21.0
+  Downloading watchfiles-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 1.8 MB/s eta 0:00:00
+Collecting weasyprint==53.3
+  Downloading weasyprint-53.3-py3-none-any.whl (242 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.3/242.3 kB 2.0 MB/s eta 0:00:00
+Collecting websockets==10.3
+  Downloading websockets-10.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (111 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.5/111.5 kB 2.0 MB/s eta 0:00:00
+Collecting werkzeug==3.0.1
+  Downloading werkzeug-3.0.1-py3-none-any.whl (226 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 1.9 MB/s eta 0:00:00
+Collecting wordcloud==1.9.2
+  Downloading wordcloud-1.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (455 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 455.4/455.4 kB 1.8 MB/s eta 0:00:00
+Collecting wsproto==1.2.0
+  Downloading wsproto-1.2.0-py3-none-any.whl (24 kB)
+Collecting xarray==2024.2.0
+  Downloading xarray-2024.2.0-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 1.8 MB/s eta 0:00:00
+Collecting xarray-einstats==0.7.0
+  Downloading xarray_einstats-0.7.0-py3-none-any.whl (31 kB)
+Collecting xgboost==1.4.2
+  Downloading xgboost-1.4.2-py3-none-manylinux2010_x86_64.whl (166.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.7/166.7 MB 1.8 MB/s eta 0:00:00
+Collecting xlsxwriter==3.2.0
+  Downloading XlsxWriter-3.2.0-py3-none-any.whl (159 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.9/159.9 kB 2.1 MB/s eta 0:00:00
+Collecting xml-python==0.4.3
+  Downloading xml_python-0.4.3-py3-none-any.whl (9.2 kB)
+Collecting yarl==1.9.4
+  Downloading yarl-1.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (301 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.6/301.6 kB 1.9 MB/s eta 0:00:00
+Collecting zopfli==0.2.3
+  Downloading zopfli-0.2.3-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (848 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 848.9/848.9 kB 1.8 MB/s eta 0:00:00
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /opt/conda/lib/python3.10/site-packages (from aiohttp==3.8.6->-r requirements-pip1.txt (line 2)) (2.1.1)
+Requirement already satisfied: attrs>=17.3.0 in /opt/conda/lib/python3.10/site-packages (from aiohttp==3.8.6->-r requirements-pip1.txt (line 2)) (22.2.0)
+Requirement already satisfied: six>=1.5 in /opt/conda/lib/python3.10/site-packages (from analytics-python==1.4.post1->-r requirements-pip1.txt (line 4)) (1.16.0)
+Requirement already satisfied: python-dateutil>2.1 in /opt/conda/lib/python3.10/site-packages (from analytics-python==1.4.post1->-r requirements-pip1.txt (line 4)) (2.8.2)
+Requirement already satisfied: requests<3.0,>=2.7 in /opt/conda/lib/python3.10/site-packages (from analytics-python==1.4.post1->-r requirements-pip1.txt (line 4)) (2.28.2)
+Requirement already satisfied: setuptools>=60.0.0 in /opt/conda/lib/python3.10/site-packages (from arviz==0.17.0->-r requirements-pip1.txt (line 6)) (67.6.0)
+Requirement already satisfied: pandas>=1.4.0 in /opt/conda/lib/python3.10/site-packages (from arviz==0.17.0->-r requirements-pip1.txt (line 6)) (1.5.3)
+Requirement already satisfied: packaging in /opt/conda/lib/python3.10/site-packages (from arviz==0.17.0->-r requirements-pip1.txt (line 6)) (23.0)
+Requirement already satisfied: scipy>=1.8.0 in /opt/conda/lib/python3.10/site-packages (from arviz==0.17.0->-r requirements-pip1.txt (line 6)) (1.10.1)
+Requirement already satisfied: numpy<2.0,>=1.22.0 in /opt/conda/lib/python3.10/site-packages (from arviz==0.17.0->-r requirements-pip1.txt (line 6)) (1.23.5)
+Requirement already satisfied: typing-extensions>=4.1.0 in /opt/conda/lib/python3.10/site-packages (from arviz==0.17.0->-r requirements-pip1.txt (line 6)) (4.5.0)
+Requirement already satisfied: jinja2>=3 in /opt/conda/lib/python3.10/site-packages (from branca==0.7.1->-r requirements-pip1.txt (line 16)) (3.1.2)
+Collecting cairocffi
+  Downloading cairocffi-1.7.0-py3-none-any.whl (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.4/75.4 kB 2.4 MB/s eta 0:00:00
+Requirement already satisfied: tinycss2 in /opt/conda/lib/python3.10/site-packages (from cairosvg==2.5.2->-r requirements-pip1.txt (line 18)) (1.2.1)
+Requirement already satisfied: pillow in /opt/conda/lib/python3.10/site-packages (from cairosvg==2.5.2->-r requirements-pip1.txt (line 18)) (9.4.0)
+Requirement already satisfied: defusedxml in /opt/conda/lib/python3.10/site-packages (from cairosvg==2.5.2->-r requirements-pip1.txt (line 18)) (0.7.1)
+Requirement already satisfied: click>=4.0 in /opt/conda/lib/python3.10/site-packages (from click-plugins==1.1.1->-r requirements-pip1.txt (line 22)) (8.1.3)
+Requirement already satisfied: webencodings in /opt/conda/lib/python3.10/site-packages (from cssselect2==0.7.0->-r requirements-pip1.txt (line 27)) (0.5.1)
+Requirement already satisfied: future in /opt/conda/lib/python3.10/site-packages (from databricks-sql-connector==0.9.1->-r requirements-pip1.txt (line 29)) (1.0.0)
+Requirement already satisfied: idna>=2.0.0 in /opt/conda/lib/python3.10/site-packages (from email-validator==2.1.0.post1->-r requirements-pip1.txt (line 34)) (3.4)
+Requirement already satisfied: pytz in /opt/conda/lib/python3.10/site-packages (from exchange-calendars==3.4->-r requirements-pip1.txt (line 36)) (2022.7.1)
+Requirement already satisfied: toolz in /opt/conda/lib/python3.10/site-packages (from exchange-calendars==3.4->-r requirements-pip1.txt (line 36)) (0.12.0)
+Requirement already satisfied: certifi in /opt/conda/lib/python3.10/site-packages (from fiona==1.9.2->-r requirements-pip1.txt (line 43)) (2024.6.2)
+Collecting blinker>=1.6.2
+  Downloading blinker-1.8.2-py3-none-any.whl (9.5 kB)
+Requirement already satisfied: h5py in /opt/conda/lib/python3.10/site-packages (from h5netcdf==1.3.0->-r requirements-pip1.txt (line 61)) (3.8.0)
+Requirement already satisfied: sniffio in /opt/conda/lib/python3.10/site-packages (from httpx==0.27.0->-r requirements-pip1.txt (line 66)) (1.3.0)
+Requirement already satisfied: anyio in /opt/conda/lib/python3.10/site-packages (from httpx==0.27.0->-r requirements-pip1.txt (line 66)) (3.6.2)
+Collecting absl-py
+  Downloading absl_py-2.1.0-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.7/133.7 kB 2.0 MB/s eta 0:00:00
+Requirement already satisfied: pyparsing>=2.2.1 in /opt/conda/lib/python3.10/site-packages (from matplotlib==3.6.3->-r requirements-pip1.txt (line 87)) (3.0.9)
+Requirement already satisfied: cycler>=0.10 in /opt/conda/lib/python3.10/site-packages (from matplotlib==3.6.3->-r requirements-pip1.txt (line 87)) (0.11.0)
+Requirement already satisfied: contourpy>=1.0.1 in /opt/conda/lib/python3.10/site-packages (from matplotlib==3.6.3->-r requirements-pip1.txt (line 87)) (1.0.7)
+Requirement already satisfied: kiwisolver>=1.0.1 in /opt/conda/lib/python3.10/site-packages (from matplotlib==3.6.3->-r requirements-pip1.txt (line 87)) (1.4.4)
+Requirement already satisfied: fonttools>=4.22.0 in /opt/conda/lib/python3.10/site-packages (from matplotlib==3.6.3->-r requirements-pip1.txt (line 87)) (4.39.0)
+Collecting decorator<5.0,>=4.0.2
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Requirement already satisfied: tqdm<5.0,>=4.11.2 in /opt/conda/lib/python3.10/site-packages (from moviepy==1.0.3->-r requirements-pip1.txt (line 92)) (4.65.0)
+Requirement already satisfied: imageio<3.0,>=2.5 in /opt/conda/lib/python3.10/site-packages (from moviepy==1.0.3->-r requirements-pip1.txt (line 92)) (2.26.0)
+Requirement already satisfied: joblib in /opt/conda/lib/python3.10/site-packages (from nltk==3.6.3->-r requirements-pip1.txt (line 101)) (1.2.0)
+Requirement already satisfied: wheel in /opt/conda/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->-r requirements-pip1.txt (line 103)) (0.38.4)
+Requirement already satisfied: cryptography>=3.3 in /opt/conda/lib/python3.10/site-packages (from paramiko==3.4.0->-r requirements-pip1.txt (line 119)) (39.0.2)
+Requirement already satisfied: statsmodels>=0.13.2 in /opt/conda/lib/python3.10/site-packages (from plotnine==0.10.1->-r requirements-pip1.txt (line 128)) (0.13.5)
+Requirement already satisfied: patsy>=0.5.1 in /opt/conda/lib/python3.10/site-packages (from plotnine==0.10.1->-r requirements-pip1.txt (line 128)) (0.5.3)
+Requirement already satisfied: cloudpickle in /opt/conda/lib/python3.10/site-packages (from pymc==4.0.1->-r requirements-pip1.txt (line 143)) (2.2.1)
+Collecting aesara==2.7.3
+  Downloading aesara-2.7.3.tar.gz (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 1.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting aeppl==0.0.31
+  Downloading aeppl-0.0.31.tar.gz (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 2.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: cffi>=1.4.1 in /opt/conda/lib/python3.10/site-packages (from pynacl==1.5.0->-r requirements-pip1.txt (line 145)) (1.16.0)
+Requirement already satisfied: pip>=8.1.0 in /opt/conda/lib/python3.10/site-packages (from pypandoc==1.6.3->-r requirements-pip1.txt (line 146)) (23.0.1)
+Requirement already satisfied: pluggy<2.0,>=0.12 in /opt/conda/lib/python3.10/site-packages (from pytest==6.2.5->-r requirements-pip1.txt (line 154)) (1.0.0)
+Collecting pyobjc>=2.4
+  Downloading pyobjc-10.3.1-py3-none-any.whl (4.0 kB)
+Requirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (from shap==0.39.0->-r requirements-pip1.txt (line 172)) (1.2.2)
+Requirement already satisfied: numba in /opt/conda/lib/python3.10/site-packages (from shap==0.39.0->-r requirements-pip1.txt (line 172)) (0.56.4)
+Collecting pyOpenSSL<23.0.0,>=16.2.0
+  Downloading pyOpenSSL-22.1.0-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 kB 2.2 MB/s eta 0:00:00
+Collecting cryptography>=3.3
+  Downloading cryptography-36.0.2-cp36-abi3-manylinux_2_24_x86_64.whl (3.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 1.8 MB/s eta 0:00:00
+Collecting filelock<4,>=3.5
+  Downloading filelock-3.15.1-py3-none-any.whl (15 kB)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /opt/conda/lib/python3.10/site-packages (from snowflake-connector-python==2.7.12->-r requirements-pip1.txt (line 176)) (1.26.15)
+Requirement already satisfied: pycryptodomex!=3.5.0,<4.0.0,>=3.2 in /opt/conda/lib/python3.10/site-packages (from snowflake-connector-python==2.7.12->-r requirements-pip1.txt (line 176)) (3.19.0)
+Requirement already satisfied: pyjwt<3.0.0 in /opt/conda/lib/python3.10/site-packages (from snowflake-connector-python==2.7.12->-r requirements-pip1.txt (line 176)) (2.6.0)
+Requirement already satisfied: pure-eval in /opt/conda/lib/python3.10/site-packages (from stack-data==0.6.3->-r requirements-pip1.txt (line 183)) (0.2.2)
+Requirement already satisfied: executing>=1.2.0 in /opt/conda/lib/python3.10/site-packages (from stack-data==0.6.3->-r requirements-pip1.txt (line 183)) (1.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in /opt/conda/lib/python3.10/site-packages (from stack-data==0.6.3->-r requirements-pip1.txt (line 183)) (2.2.1)
+Requirement already satisfied: sympy in /opt/conda/lib/python3.10/site-packages (from torch==2.0.1->-r requirements-pip1.txt (line 195)) (1.11.1)
+Requirement already satisfied: networkx in /opt/conda/lib/python3.10/site-packages (from torch==2.0.1->-r requirements-pip1.txt (line 195)) (3.0)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /opt/conda/lib/python3.10/site-packages (from werkzeug==3.0.1->-r requirements-pip1.txt (line 210)) (2.1.2)
+Collecting etuples
+  Downloading etuples-0.3.9.tar.gz (30 kB)
+  Preparing metadata (setup.py) ... done
+Collecting logical-unification
+  Downloading logical-unification-0.4.6.tar.gz (31 kB)
+  Preparing metadata (setup.py) ... done
+Collecting miniKanren
+  Downloading miniKanren-1.0.3.tar.gz (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.3/41.3 kB 3.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting cons
+  Downloading cons-0.4.6.tar.gz (26 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: pycparser in /opt/conda/lib/python3.10/site-packages (from cffi>=1.4.1->pynacl==1.5.0->-r requirements-pip1.txt (line 145)) (2.21)
+Collecting brotli>=1.0.1
+  Downloading Brotli-1.1.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 1.8 MB/s eta 0:00:00
+Collecting pyobjc-framework-SyncServices==10.3.1
+  Downloading pyobjc_framework_syncservices-10.3.1.tar.gz (49 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.6/49.6 kB 2.4 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... error
+  error: subprocess-exited-with-error
+
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [25 lines of output]
+      Traceback (most recent call last):
+        File "/opt/conda/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+          main()
+        File "/opt/conda/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+        File "/opt/conda/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 118, in get_requires_for_build_wheel
+          return hook(config_settings)
+        File "/tmp/pip-build-env-vp9f738h/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 325, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=['wheel'])
+        File "/tmp/pip-build-env-vp9f738h/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 295, in _get_build_requires
+          self.run_setup()
+        File "/tmp/pip-build-env-vp9f738h/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 311, in run_setup
+          exec(code, locals())
+        File "<string>", line 31, in <module>
+        File "/tmp/pip-install-ae6jv495/pyobjc-framework-syncservices_8663dc3baffb441e912aeb1dd629bf49/pyobjc_setup.py", line 517, in Extension
+          lines = subprocess.check_output(["xcodebuild", "-version"], text=True).splitlines()
+        File "/opt/conda/lib/python3.10/subprocess.py", line 421, in check_output
+          return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+        File "/opt/conda/lib/python3.10/subprocess.py", line 503, in run
+          with Popen(*popenargs, **kwargs) as process:
+        File "/opt/conda/lib/python3.10/subprocess.py", line 971, in __init__
+          self._execute_child(args, executable, preexec_fn, close_fds,
+        File "/opt/conda/lib/python3.10/subprocess.py", line 1847, in _execute_child
+          raise child_exception_type(errno_num, err_msg, err_filename)
+      FileNotFoundError: [Errno 2] No such file or directory: 'xcodebuild'
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
