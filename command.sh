@@ -14,3 +14,16 @@
 
 
 docker run -it --rm --name kmp -u root --entrypoint /bin/bash elyra/kernel-py:3.2.3
+
+
+python-docx==0.8.11
+python-dotenv==1.0.1
+python-multipart==0.0.9
+python-pptx==0.6.21
+pyxlsb==1.0.8
+
+
+
+
+--- error
+pyttsx3==2.9

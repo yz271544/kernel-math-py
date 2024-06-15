@@ -9,8 +9,9 @@ USER root
 ENV PATH=$PATH:$CONDA_DIR/bin
 
 RUN conda config --append channels conda-forge
-RUN conda config --append channels defaults
+#RUN conda config --append channels defaults
 RUN conda config --append channels free
+RUN conda config --set ssl_verify false
 RUN conda install --quiet --yes \
     cffi \
     future \
