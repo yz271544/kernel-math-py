@@ -8,6 +8,7 @@ USER root
 
 ENV PATH=$PATH:$CONDA_DIR/bin
 
+RUN mkdir /mnt/data
 RUN conda config --append channels conda-forge
 #RUN conda config --append channels defaults
 RUN conda config --append channels free
@@ -18,8 +19,10 @@ RUN conda install --quiet --yes \
     pycryptodomex && \
     conda clean --all && \
     fix-permissions $CONDA_DIR && \
-    fix-permissions /home/$NB_USER
+    fix-permissions /home/$NB_USER && \
+    fix-permissions /mnt/data
 
+RUN chmod 777 /mnt/data
 # ADD jupyter_enterprise_gateway_kernel_image_files-3.2.3.tar.gz /usr/local/bin/
 RUN apt-get clean
 RUN apt-get update && apt-get install -yq --no-install-recommends \
@@ -89,10 +92,6 @@ COPY requirements-conda.txt .
 RUN conda install --yes --file requirements-conda.txt
 
 RUN pip install -r requirements-pip.txt
-
-RUN mkdir /mnt/data
-
-RUN chmod 777 /mnt/data
 
 # Disble healthcheck inherited from notebook image
 HEALTHCHECK NONE
