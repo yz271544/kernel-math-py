@@ -1,0 +1,21 @@
+---
+# Source: enterprise-gateway/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: default
+  name: enterprise-gateway-ingress
+spec:
+
+  rules:
+    - host: ss.test.enterprise.gateway
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: "enterprise-gateway"
+                port:
+                
+                  number: 8888

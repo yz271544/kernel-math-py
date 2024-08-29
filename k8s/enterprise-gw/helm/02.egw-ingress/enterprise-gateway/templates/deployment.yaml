@@ -1,0 +1,80 @@
+---
+# Source: enterprise-gateway/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: enterprise-gateway
+  namespace: enterprise-gateway-ns
+  labels:
+    gateway-selector: enterprise-gateway
+    app: enterprise-gateway
+    component: enterprise-gateway
+    chart: enterprise-gateway-3.2.3
+    release: enterprise-gateway
+    heritage: Helm
+    ss.eg-cluster: "test"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      gateway-selector: enterprise-gateway
+  template:
+    metadata:
+      labels:
+        gateway-selector: enterprise-gateway
+        app: enterprise-gateway
+        component: enterprise-gateway
+        ss.eg-cluster: "test"
+    spec:
+      # Created by this chart.
+      serviceAccountName: enterprise-gateway-sa
+      terminationGracePeriodSeconds: 60
+      containers:
+      - name: enterprise-gateway
+        image: elyra/enterprise-gateway:3.2.3
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: EG_PORT
+          
+          value: !!str 8888
+        - name: EG_RESPONSE_PORT
+          
+          value: !!str 8877
+        - name: EG_NAMESPACE
+          value: enterprise-gateway-ns
+        - name: EG_KERNEL_CLUSTER_ROLE
+          value: kernel-controller
+        - name: EG_SHARED_NAMESPACE
+          value: "True"
+        - name: EG_MIRROR_WORKING_DIRS
+          value: "False"
+        - name: EG_CULL_IDLE_TIMEOUT
+          value: !!str 900
+        - name: EG_CULL_CONNECTED
+          value: "True"
+        - name: EG_LOG_LEVEL
+          value: DEBUG
+        - name: EG_KERNEL_LAUNCH_TIMEOUT
+          value: !!str 60
+        - name: EG_KERNEL_INFO_TIMEOUT
+          value: !!str 
+        - name: EG_ALLOWED_KERNELS
+          value: '["r_kubernetes","python_kubernetes","python_tf_kubernetes","python_tf_gpu_kubernetes","scala_kubernetes","spark_r_kubernetes","spark_python_kubernetes","spark_scala_kubernetes","spark_python_operator"]'
+        - name: EG_DEFAULT_KERNEL_NAME
+          value: python_kubernetes
+        # Optional authorization token passed in all requests
+        - name: EG_INHERITED_ENVS
+          value: |-
+            PATH
+        ports:
+        
+        - containerPort: 8888
+        
+        - containerPort: 8877
+        resources:
+          limits:
+            cpu: 1
+            memory: 800Mi
+          requests:
+            cpu: 500m
+            memory: 300Mi

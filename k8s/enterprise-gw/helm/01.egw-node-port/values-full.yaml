@@ -1,0 +1,78 @@
+global:
+  # Create RBAC resources
+  rbac: true
+  commonLabels: 
+    ss.eg-cluster: "test"
+  serviceAccountName: "enterprise-gateway-sa"
+  # ImagePullSecrets for a ServiceAccount, list of secrets in the same namespace
+  # to use for pulling any images in pods that reference this ServiceAccount.
+  # Must be set for any cluster configured with private docker registry.
+  #imagePullSecrets:
+  #  - private-registry-key # provide the name of the secret to use
+
+# You can optionally create imagePull Secrets
+imagePullSecretsCreate:
+  enabled: false
+  annotations: {}
+    # this annotation allows you to keep the secret even if the helm release is deleted
+    # "helm.sh/resource-policy": "keep"
+    #secrets:
+    #- private-registry-key # provide the name of the secret to create
+
+service:
+  type: "NodePort"
+  ports:
+    # The primary port on which Enterprise Gateway is servicing requests.
+    - name: "http"
+      port: 8888
+      targetPort: 8888
+      nodePort: 32652 # optional nodePort
+    # The  port on which Enterprise Gateway will receive kernel connection info responses.
+    - name: "http-response"
+      port: 8877
+      targetPort: 8877
+      nodePort: 30481 # optional nodePort
+
+# Enterprise Gateway image name and tag to use from private registry.
+image: elyra/enterprise-gateway:3.2.3
+
+deployment:
+  enabled: true
+  # Update CPU/Memory as needed
+  resources:
+    limits:
+      cpu: 1
+      memory: 800Mi
+    requests:
+      cpu: 500m
+      memory: 300Mi
+  # Update to deploy multiple replicas of EG.
+  replicas: 2
+  # Give Enteprise Gateway some time to gracefully shutdown
+  terminationGracePeriodSeconds: 60
+
+# Kernel Image Puller (daemonset)
+kip:
+  enabled: true # turn this off, if running DaemonSets is restricted by your cluster Administrator
+  serviceAccountName: "kernel-image-puller-sa"
+  # Kernel Image Puller image name and tag to use from private registry.
+  image: elyra/kernel-image-puller:3.2.3
+  podSecurityPolicy:
+    create: false
+  resources:
+    limits:
+      cpu: 100m
+      memory: 200Mi
+    requests:
+      cpu: 50m
+      memory: 100Mi
+
+ingress:
+  enabled: false
+  # Ingress resource host
+  hostName: "ss.test.enterprise.gateway"
+
+kernel:
+  shareGatewayNamespace: true
+  cullIdleTimeout: 900
+  cullConnected: true

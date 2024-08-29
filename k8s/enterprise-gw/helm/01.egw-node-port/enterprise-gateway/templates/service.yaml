@@ -1,0 +1,31 @@
+---
+# Source: enterprise-gateway/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: enterprise-gateway
+    component: enterprise-gateway
+    chart: enterprise-gateway-3.2.3
+    release: enterprise-gateway
+    heritage: Helm
+    ss.eg-cluster: "test"
+
+  name: enterprise-gateway
+  namespace: enterprise-gateway-ns
+spec:
+  ports:
+    -
+      name: http
+      nodePort: 32652
+      port: 8888
+      targetPort: 8888
+    -
+      name: http-response
+      nodePort: 30481
+      port: 8877
+      targetPort: 8877
+  selector:
+    gateway-selector: enterprise-gateway
+  sessionAffinity: ClientIP
+  type: NodePort

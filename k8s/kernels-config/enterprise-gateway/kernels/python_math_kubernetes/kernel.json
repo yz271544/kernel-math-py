@@ -1,0 +1,26 @@
+{
+  "language": "python",
+  "display_name": "Python for math on Kubernetes",
+  "metadata": {
+    "process_proxy": {
+      "class_name": "enterprise_gateway.services.processproxies.k8s.KubernetesProcessProxy",
+      "config": {
+        "image_name": "registry.cn-sh-01.sensecore.cn/tsm_2024052501/kernel-math-py:3.2.3-180fec2"
+      }
+    },
+    "debugger": true
+  },
+  "env": {},
+  "argv": [
+    "python",
+    "/usr/local/share/jupyter/kernels/python_math_kubernetes/scripts/launch_kubernetes.py",
+    "--RemoteProcessProxy.kernel-id",
+    "{kernel_id}",
+    "--RemoteProcessProxy.port-range",
+    "{port_range}",
+    "--RemoteProcessProxy.response-address",
+    "{response_address}",
+    "--RemoteProcessProxy.public-key",
+    "{public_key}"
+  ]
+}

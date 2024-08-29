@@ -1,0 +1,72 @@
+---
+# Source: enterprise-gateway/templates/daemonset.yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: kernel-image-puller
+  namespace: enterprise-gateway-ns
+  labels:
+    gateway-selector: enterprise-gateway
+    app: enterprise-gateway
+    component: kernel-image-puller
+    chart: enterprise-gateway-3.2.3
+    release: enterprise-gateway
+    heritage: Helm
+    ss.eg-cluster: "test"
+spec:
+  selector:
+    matchLabels:
+      name: kernel-image-puller
+  template:
+    metadata:
+      labels:
+        name: kernel-image-puller
+        app: enterprise-gateway
+        component: kernel-image-puller
+        chart: enterprise-gateway-3.2.3
+        release: enterprise-gateway
+        heritage: Helm
+        ss.eg-cluster: "test"
+    spec:
+      serviceAccountName: kernel-image-puller-sa
+      containers:
+      - name: kernel-image-puller
+        image: elyra/kernel-image-puller:3.2.3
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: KIP_LOG_LEVEL
+          value: DEBUG
+        - name: KIP_GATEWAY_HOST
+          value: "http://enterprise-gateway.enterprise-gateway-ns:8888"
+        - name: KIP_VALIDATE_CERT
+          value: "false"
+        - name: KIP_INTERVAL
+          value: !!str 300
+        - name: KIP_PULL_POLICY
+          value: IfNotPresent
+        - name: KIP_CRI_ENDPOINT
+          value: "unix:///var/run/docker.sock"
+        - name: KIP_DEFAULT_CONTAINER_REGISTRY
+          value: docker.io
+        # Optional authorization token passed in all requests (should match EG_AUTH_TOKEN)
+        # fetcher to fetch image names, defaults to KernelSpecsFetcher
+        - name: KIP_IMAGE_FETCHER
+          value: "KernelSpecsFetcher"
+        # if CombinedImagesFetcher is used KIP_INTERNAL_FETCHERS defines the fetchers that get used internally
+        # if StaticListFetcher is used KIP_IMAGES defines the list of images pullers will fetch
+        resources:
+          limits:
+            cpu: 100m
+            memory: 200Mi
+          requests:
+            cpu: 50m
+            memory: 100Mi
+
+        volumeMounts:
+        - name: cri-socket
+          mountPath: !!str /var/run/docker.sock  # see env KIP_CRI_ENDPOINT
+          readOnly: true
+      volumes:
+      - name: cri-socket
+        hostPath:
+          path: /var/run/docker.sock

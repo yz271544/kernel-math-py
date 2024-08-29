@@ -1,0 +1,29 @@
+---
+# Source: enterprise-gateway/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: enterprise-gateway
+    component: enterprise-gateway
+    chart: enterprise-gateway-3.3.0-dev0
+    release: release-name
+    heritage: Helm
+    ss.eg-cluster: "test"
+
+  name: enterprise-gateway
+  namespace: default
+spec:
+  ports:
+    -
+      name: http
+      port: 8888
+      targetPort: 8888
+    -
+      name: http-response
+      port: 8877
+      targetPort: 8877
+  selector:
+    gateway-selector: enterprise-gateway
+  sessionAffinity: ClientIP
+  type: ClusterIP
